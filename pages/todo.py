@@ -6,7 +6,6 @@ class TodoPage:
         self.todo_input = page.get_by_role("textbox", name="Enter your todo")
         self.add_todo_button = page.get_by_role("button", name="+").nth(1)
         
-
     def create_category(self, category_name):
         self.category_input.fill(category_name)
         self.add_category_button.click()
